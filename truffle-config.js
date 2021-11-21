@@ -2,9 +2,7 @@ require('babel-register');
 require('babel-polyfill');
 require('dotenv').config();
 
-
 module.exports = {
-
 
     networks: {
         development: {
@@ -15,11 +13,9 @@ module.exports = {
     },
 
     contracts_directory: './src/contracts/',
-    contract_build_directory: './src/abis/',
+    contracts_build_directory: './src/abis/',
 
     compilers: {
-        // version: "0.8.10+commit.fc410830.Emscripten.clang",
-        // version: "0.4.24",
         solc: {
             optimizer: {
                 enabled: true,
