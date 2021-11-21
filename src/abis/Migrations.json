@@ -53,7 +53,7 @@
   "sourceMap": "59:398:0:-;;;108:10;85:33;;;;;;;;;;;;;;;;;;;;59:398;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:398:0;;;;;;;",
   "deployedSourceMap": "59:398:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;59:398:0;;;;;;;;;;;;;;;;;;;;;;;;;;;;;124:39;;;:::i;:::-;;;;;;;;;;;;;;;;;;;85:33;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;343:112;;;;;;13:2:-1;8:3;5:11;2:2;;;29:1;26;19:12;2:2;343:112:0;;;;;;;;;;;;;;;;;:::i;:::-;;124:39;;;;:::o;85:33::-;;;;;;;;;;;;;:::o;343:112::-;237:5;;;;;;;;;;;223:19;;:10;:19;;;202:117;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;439:9;412:24;:36;;;;343:112;:::o",
   "source": "// SPDX-License-Identifier: MIT\npragma solidity >=0.4.22;\n\ncontract Migrations {\n    address public owner = msg.sender;\n    uint256 public last_completed_migration;\n\n    modifier restricted() {\n        require(\n            msg.sender == owner,\n            \"This function is restricted to the contract's owner\"\n        );\n        _;\n    }\n\n    function setCompleted(uint256 completed) public restricted {\n        last_completed_migration = completed;\n    }\n}\n",
-  "sourcePath": "C:\\Users\\morte\\OneDrive\\Dokumenter\\KEA\\sem3_second\\blockchain-developer-bootcamp\\src\\contracts\\Migrations.sol",
+  "sourcePath": "C:\\pr0\\blockchain-developer-bootcamp\\src\\contracts\\Migrations.sol",
   "ast": {
     "absolutePath": "project:/src/contracts/Migrations.sol",
     "exportedSymbols": {
@@ -914,8 +914,7 @@
     }
   },
   "schemaVersion": "3.4.3",
-  "updatedAt": "2021-11-21T19:49:43.834Z",
-  "networkType": "ethereum",
+  "updatedAt": "2021-11-21T23:42:54.019Z",
   "devdoc": {
     "methods": {}
   },
